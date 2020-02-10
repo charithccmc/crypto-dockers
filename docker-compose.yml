@@ -32,7 +32,7 @@ services:
       build: zec-client
       restart: always
       ports:
-        - "8432:8432"
+        - "8632:8632"
       volumes:
         - .data/zec:/opt/zcash/:ro
       container_name: "zec-client"
