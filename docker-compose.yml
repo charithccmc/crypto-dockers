@@ -3,7 +3,6 @@ version: '3'
 services:
     btc-client:
       build: btc-client
-      restart: always
       ports:
         - "8332:8332"
       volumes:
@@ -12,7 +11,6 @@ services:
 
     bch-client:
       build: bch-client
-      restart: always
       ports:
         - "8432:8432"
       volumes:
@@ -21,7 +19,6 @@ services:
 
     ltc-client:
       build: ltc-client
-      restart: always
       ports:
         - "8532:8532"
       volumes:
@@ -30,7 +27,6 @@ services:
 
     zec-client:
       build: zec-client
-      restart: always
       ports:
         - "8632:8632"
       volumes:
