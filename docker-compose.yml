@@ -1,0 +1,38 @@
+version: '1'
+
+services:
+    btc-client:
+      build: btc-client
+      restart: always
+      ports:
+        - "8332:8332"
+      volumes:
+        - .data/btc:/opt/bitcoin/:ro
+      container_name: "btc-client"
+
+    bch-client:
+      build: bch-client
+      restart: always
+      ports:
+        - "8432:8432"
+      volumes:
+        - .data/btc:/opt/bitcoin/:ro
+      container_name: "bch-client"
+
+    ltc-client:
+      build: ltc-client
+      restart: always
+      ports:
+        - "8432:8432"
+      volumes:
+        - .data/ltc:/opt/litecoin/:ro
+      container_name: "ltc-client"
+
+    zec-client:
+      build: zec-client
+      restart: always
+      ports:
+        - "8432:8432"
+      volumes:
+        - .data/zec:/opt/zcash/:ro
+      container_name: "zec-client"

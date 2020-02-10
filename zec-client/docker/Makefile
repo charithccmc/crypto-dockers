@@ -5,4 +5,4 @@ install:
 	bash ./zcutil/fetch-params.sh && \
 	bash ./zcutil/build.sh -j4 && \
 	cd src && \
-	install -s -c zcashd zcash-cli -t /usr/local/bin 
+	install -s -c zcashd zcash-cli -t /usr/local/bin
