@@ -16,14 +16,14 @@ services:
       ports:
         - "8432:8432"
       volumes:
-        - .data/btc:/opt/bitcoin/:ro
+        - .data/bch:/opt/bitcoin-cash/:ro
       container_name: "bch-client"
 
     ltc-client:
       build: ltc-client
       restart: always
       ports:
-        - "8432:8432"
+        - "8532:8532"
       volumes:
         - .data/ltc:/opt/litecoin/:ro
       container_name: "ltc-client"
